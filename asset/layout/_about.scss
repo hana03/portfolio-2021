@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.about-wrapper {
+    max-width: 100%;
+
+    .inner {
+        padding: 0 10px;
+        margin: 30px 0;
+        text-align: center;
+
+        .main-ttl {
+            @include main-ttl;
+        }
+
+        .about-sec {
+            display: flex;
+            flex-direction: column;
+
+            .about-imge {
+                width: 100%;
+
+                img {
+                    width: 70%;
+                    box-shadow: 11px 10px 2px $brwn;
+                }
+            }
+
+            .profile {
+                .main-sub-ttl {
+                    @include main-sub-ttl;
+                    margin-top: 30px
+                }
+
+                .profile-list {
+                    width: 100%;
+
+                    dt {
+                        float: left;
+                        // width: 28%;
+                        @include main-text;
+                        font-size: 1.6rem;
+                    }
+
+                    dd {
+                        // width: 70%;
+                        text-align: left;
+                        white-space: nowrap;
+                        @include main-text;
+                        font-size: 1.6rem;
+                    }
+                }
+
+                .link-text {
+                    a {
+                        color: $font-color;
+                        text-decoration: none;
+                        padding-right: 10px;
+                        display: inline-block;
+
+                        .fa-angle-double-right {
+                            padding-left: 4px;
+                        }
+
+                        &:hover {
+                            color: $yellow;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                .profile-text {
+                    text-align: left;
+                    @include main-text;
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .ba-color {
+            background-color: $yellow;
+            width: 200px;
+            height: 50px;
+            display: inline-block;
+            position: relative;
+            margin: 30px;
+            position: relative;
+
+            .link-btn {
+                @include link-btn;
+
+                &:hover {
+                    opacity: .8;
+                }
+
+                &:active {
+                    position: absolute;
+                    color: $white;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+
+@include tb {
+    .about-wrapper {
+        padding-bottom: 60px;
+
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .main-ttl {
+                font-size: 4.0rem;
+            }
+
+            .about-sec {
+                flex-direction: row;
+
+                .about-imge {
+                    width: 50%;
+                }
+
+                .profile {
+                    max-width: 50%;
+
+                    .main-sub-ttl {
+                        text-align: left;
+                        font-size: 3.2rem;
+                        margin-top: 0;
+                    }
+
+                    .profile-list {
+                        width: 100%;
+
+                        dt {
+                            font-size: 1.8rem;
+                        }
+
+                        dd {
+                            font-size: 1.8rem;
+
+                            .sp-br {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .link-text {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
