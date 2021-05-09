@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.header {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+    background-color: $ba-color-black;
+
+    .inner {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+
+        .header-logo {
+            font-size: 2.4rem;
+            letter-spacing: 0.1em;
+           
+            a{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+
+        .fa-bars {
+            font-size: 24px;
+            color: $white;
+        }
+    }
+
+    .header-nav-sp {
+        ul {
+            background-color: $ba-color-black-sp;
+            height: 100vh;
+
+            li {
+                text-align: center;
+                width: 100vw;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 2.4rem;
+                    padding: 20px 0;
+                    color: $white;
+
+                    &:hover {
+                        color: $green;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-nav-pc {
+        display: none;
+    }
+}
+
+@include tb {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 75px;
+
+        .pc-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: contents;
+
+            .header-logo {
+                align-self: flex-start;
+                line-height: 75px;
+                a{
+                    line-height: 75px;
+                    display: inline-block;
+                }
+            }
+
+            .fa-bars {
+                display: none;
+            }
+
+            .header-nav-pc {
+                display: block;
+
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    li {
+                        padding: 0 20px;
+
+                        a {
+                            display: inline-block;
+                            line-height: 75px;
+                            text-decoration: none;
+                            color: $white;
+                            font-size: 2.4rem;
+                            padding: 0 20px;
+                            &:hover{
+                                color: $green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
