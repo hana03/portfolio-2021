@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+main {
+    .inner {
+        padding: 0 10px;
+    }
+
+    .portfolio-wrapper {
+        .main-ttl {
+            @include main-ttl;
+            display: inline-block;
+        }
+
+        .portfolio-sec {
+            // display: flex;
+            // flex-direction: column;
+
+            .portfolio-text {
+                width: 100%;
+
+                .profile-list {
+                    dt {
+                        font-size: 2.0rem;
+                        line-height: 1em;
+                        margin-bottom: 8px;
+                        border-left: 4px solid $brwn;
+                        padding: 7px;
+                        display: inline-block;
+                        font-weight: bold;
+
+                    }
+
+                    dd {
+                        margin: 0px 0px 20px 13px;
+                        @include main-text;
+
+                        ul {
+                            margin-left: 20px;
+                        }
+                    }
+                }
+
+                .link-text {
+                    margin-bottom: 10px;
+                    display: inline-flex;
+                    flex-direction: column;
+
+                    a {
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .site-img-btn {
+                    display: flex;
+                    margin-bottom: 30px;
+                    list-style-type: none;
+
+                    .img-btn {
+                        width: 170px;
+                        color: $green;
+                        border: 2px solid $green;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        margin-right: 10px;
+
+                        &:hover {
+                            background-color: $yelloow-01;
+                            // color: $white;
+                        }
+                    }
+
+                    .btn:first-child {
+                        margin-right: 5px;
+                    }
+                }
+
+                .site-img-pc,
+                .site-img-sp {
+                    position: relative;
+
+                    .site-img-container {
+                        z-index: 100;
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        text-align: center;
+
+                        .site-img-content {
+                            position: absolute;
+                            text-align: center;
+                            background: rgba(0, 0, 0, 0.9);
+                            width: 100%;
+                            height: 100%;
+
+                            .fa-times-circle {
+                                position: absolute;
+                                font-size: 20px;
+                                top: 20px;
+                                right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-link {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        border-top: solid 1px tomato;
+        width: 100%;
+        padding: 30px 0;
+
+        li {
+            width: 180px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: tomato;
+                line-height: 35px;
+
+                .fa-angle-double-right {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@include tb {
+    main {
+        .inner {
+            width: 1100px;
+            margin: 0 auto;
+
+            .portfolio-wrapper {
+
+                width: 100%;
+            }
+        }
+    }
+}

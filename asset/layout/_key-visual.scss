@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+
+@import "asset/libs/_mixin.scss";
+
+.key-visual-wrapper {
+    background-color: #e7e0cf;
+    // padding: 0 10px;
+    padding-top: 80px;
+
+    .key-ttl {
+        @include key-ttl;
+    }
+
+    .key-visual-sec {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .animation {
+            animation-name: move;
+            animation-duration: 10s;
+            animation-delay: 4s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+            // @include key-animation;
+        }
+
+        @keyframes move {
+            0% {
+                opacity: 0;
+            }
+
+            40% {
+                opacity: 1;
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .box-0 {
+            @include key-animation-sp;
+            background-color: $carrot;
+            border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+        }
+
+        .box-1 {
+            @include key-animation-sp;
+            background-color: $yelloow;
+            border-radius: 30% 20% 20% 30% / 30% 20% 20% 30%;
+        }
+
+        .box-2 {
+            @include key-animation-sp;
+            background-color: $green;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        .box-3 {
+            @include key-animation-sp;
+            background-color: $pink-01;
+            border-radius: 30% 20% 20% 30% / 30% 20% 20% 30%;
+        }
+
+        .box-4 {
+            @include key-animation-sp;
+            background-color: $yelloow-01;
+            transition-duration: 1s;
+            border-radius: 50% 50% 50% 70%/50% 50% 70% 60%;
+        }
+
+        .box-5 {
+            @include key-animation-sp;
+            background-color: $green-01;
+            border-radius: 30% 20% 20% 30% / 30% 20% 20% 30%;
+        }
+
+        .box-6 {
+            @include key-animation-sp;
+            // background-color: $green-01;
+            background-color: $carrot-01;
+
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        .box11 {
+            @include key-animation-sp;
+            background-color: $cream;
+        }
+
+        .pc-box {
+            display: none;
+        }
+    }
+
+    .ba {
+        display: block;
+        width: 100%;
+        height: 7px;
+        background: $green-01;
+        animation-name: expansion;
+        animation-duration: 12s;
+        animation-timing-function: ease-in;
+        animation-delay: 1s;
+        animation-iteration-count: 2;
+        animation-direction: normal, reverse;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes expansion {
+        0% {
+            width: 0%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+}
+
+@include tb {
+    .key-visual-wrapper {
+        widows: 1200px;
+        margin: 0 auto;
+        .key-ttl {
+            margin: 100px 0;
+        }
+
+        .key-visual-sec {
+            display: none;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .box-0 {
+                @include key-animation-pc;
+            }
+
+            .box-1 {
+                @include key-animation-pc;
+            }
+
+            .box-2 {
+                @include key-animation-pc;
+            }
+
+            .box-3 {
+                @include key-animation-pc;
+            }
+
+            .box-4 {
+                @include key-animation-pc;
+            }
+
+            .box-5 {
+                @include key-animation-pc;
+            }
+
+            .box-6 {
+                @include key-animation-pc;
+            }
+
+            .pc-box {
+                display: block;
+            }
+        }
+    }
+}

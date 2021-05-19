@@ -2,11 +2,16 @@
 
 @import "asset/libs/_mixin.scss";
 
-.footer{
+.footer {
     background-color: $ba-color-black;
     padding: 20px;
     text-align: center;
-    small{
-        color: $white;
+
+    small {
+        a {
+            color: $white;
+            text-decoration: none;
+
+        }
     }
 }

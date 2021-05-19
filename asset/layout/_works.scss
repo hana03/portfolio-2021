@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.works-wrapper {
+    max-width: 100%;
+    text-align: center;
+    background-image: url(./imge/bk-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+
+    .inner {
+        padding: 0 10px;
+
+        .main-ttl {
+            @include main-ttl;
+        }
+
+        .works-img {
+            display: flex;
+            flex-direction: column;
+
+            .img-filter {
+                margin: 10px;
+                position: relative;
+                display: inline-block;
+                max-width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .img-mask {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    transition: all 0.6s ease;
+                    transform: scale(0);
+
+                    .img-cap {
+                        font-size: 150%;
+                        color: $white;
+                        padding-top: 80px;
+                    }
+                }
+
+                &:hover .img-mask {
+                    transform: scale(1);
+                }
+
+                // }
+            }
+        }
+    }
+
+
+    .ba-color {
+        background-color: #fbd266;
+        width: 200px;
+        height: 50px;
+        display: inline-block;
+        position: relative;
+        margin: 30px;
+        position: relative;
+
+        .link-btn {
+            @include link-btn;
+
+            &:hover {
+                background-color: #7e9c96;
+            }
+
+            &:active {
+                position: absolute;
+                color: white;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}
+
+@include tb {
+    .works-wrapper {
+        padding-bottom: 60px;
+
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .main-ttl {
+                @include main-ttl-pc;
+            }
+
+            .works-img {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+
+                .img-filter {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}

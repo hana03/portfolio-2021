@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.single-key-visual {
+    padding-top: 50px;
+    width: 100%;
+    background-color: #f2d8b3;
+
+    .inner {
+        padding: 0 10px;
+    }
+
+    .main-ttl {
+        margin: 95px 0 60px;
+        @include main-ttl;
+        text-align: left;
+    }
+}
+
+main {
+    .inner {
+        padding: 0 10px;
+
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+
+            li {
+                padding-right: 10px;
+
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $carrot-01;
+                        text-decoration: underline;
+                    }
+                }
+            }
+            // .archive-wrapper {
+            //     .main-ttl {
+            //         @include main-ttl;
+            //         text-align: left;
+            //     }
+    
+            //     .archive-list {
+            //         display: flex;
+            //         flex-direction: column;
+    
+            //         .works-img {
+            //             img {
+            //                 width: 100%;
+            //                 margin-bottom: 20px;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+    }
+}
+
+// @include tb {
+//     .single-key-visual {
+//         .inner {
+//             max-width: 1100px;
+//             margin: 0 auto;
+//         }
+//     }
+
+//     main {
+//         .inner {
+//             max-width: 1200px;
+//             margin: 0 auto;
+
+//             .archive-wrapper {
+
+//                 .archive-list {
+//                     flex-direction: row;
+//                     flex-wrap: wrap;
+
+//                     a {
+//                         display: inline-block;
+//                         width: 48%;
+//                         margin-bottom: 20px;
+
+//                         img {
+//                             width: 100%;
+//                             height: 100%;
+//                             border: solid 1px #726f6f;
+//                             margin-bottom: 20px;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }

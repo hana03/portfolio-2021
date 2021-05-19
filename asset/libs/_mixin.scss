@@ -1,0 +1,134 @@
+@charset "utf-8";
+
+// header
+$ba-color-black:rgba(31, 34, 33, 0.6);
+
+// ハンバーガーメニュー背景
+$ba-color-black-sp:rgba(45, 49, 48, 0.6);
+
+$font-color :#525252;
+$bk-color :#6d6969;
+$brwn:#8b7466;
+$white:#fff;
+$cream: #ecd6a5;
+$green-01:#cbd3b9;
+$green:#90b1aa;
+$carrot-01:#d76735;
+$carrot:#ea5e29;
+$yelloow-01:#fbd266;
+$yelloow:#ecaf1f;
+$green-01:#90b1aa;
+$green:#5e9b84;
+$pink-01:#f05e59;
+$pink:#dcbdaf;
+
+@mixin key-ttl {
+    font-size: 3.8rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    margin: 40px 0;
+    text-align: center;
+}
+
+@mixin key-animation-sp{
+    width: 2rem;
+    height: 2rem;
+    margin: 20px;
+    width: 25px;
+    height: 25px;
+    margin: 20px;
+    transition-property: transform;
+}
+
+@mixin key-animation-pc{
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    transition-property: transform;
+}
+
+@mixin main-ttl {
+    font-size: 3.0rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+@mixin main-ttl-pc {
+    font-size: 4.0rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: $font-color;
+    margin-bottom: 45px;
+}
+
+@mixin main-sub-ttl {
+    font-size: 2.0rem;
+    line-height: 1.6em;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+@mixin main-sub-ttl-pc {
+    font-size: 2.8rem;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+@mixin list-ttl {
+    font-size: 2.0rem;
+    line-height: 1.8em;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+}
+
+@mixin main-text {
+    font-size: 1.8rem;
+    line-height: 1.4em;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+@mixin link-btn {
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    color: $yelloow-01;
+    font-size: 2.4rem;
+    background-color: #90b1aa;
+    border-bottom: 1px solid;
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+@mixin btn-active {
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+}
+
+@mixin pc {
+    @media screen and (min-width:1200px) {
+        @content;
+    }
+}
+
+@mixin tb {
+    @media screen and (min-width:900px) {
+        @content;
+    }
+}
+
+@mixin sp {
+    @media screen and (min-width:640px) {
+        @content;
+    }
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@import "asset/libs/_mixin.scss";
+
+.skile-wrapper {
+    text-align: left;
+    max-width: 100%;
+    padding-bottom: 60px;
+
+    .inner {
+        padding: 0 10px;
+
+        .main-ttl {
+            @include main-ttl;
+
+        }
+
+        .main-sub-ttl {
+            @include main-sub-ttl;
+            transition: .2s;
+
+            .fa-angle-down {
+                margin-left: 18px;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                color:#90b1aa;
+                cursor: pointer;
+            }
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: left;
+            display: none;
+
+            .skile-list {
+                border-bottom: 1px solid $bk-color;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+                .list-ttl{
+                    @include list-ttl
+                }
+
+                .main-text {
+                    @include main-text;
+                }
+
+                .rebel-icon {
+                    display: flex;
+
+                    .fa-diaspora {
+                        color: $yelloow-01;
+                        font-size: 2.6rem;
+                        margin-right: 10px;
+                    }
+
+                    .diaspora-row {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tb {
+    .skile-wrapper {
+        padding-bottom: 60px;
+        .inner {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .main-ttl {
+                @include main-ttl-pc;
+
+            }
+
+            .main-sub-ttl {
+                @include main-sub-ttl-pc;
+                transition: .2s;
+                .fa-angle-down {
+                    font-size: 28x;
+                }
+
+                .fa-angle-down {
+                    margin-left: 18px;
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
