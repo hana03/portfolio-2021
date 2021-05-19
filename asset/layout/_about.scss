@@ -52,23 +52,7 @@
                     }
                 }
 
-                .link-text {
-                    a {
-                        color: $font-color;
-                        text-decoration: none;
-                        padding-right: 10px;
-                        display: inline-block;
-
-                        .fa-angle-double-right {
-                            padding-left: 4px;
-                        }
-
-                        &:hover {
-                            color: $yellow;
-                            text-decoration: underline;
-                        }
-                    }
-                }
+               
 
                 .profile-text {
                     text-align: left;
@@ -79,7 +63,7 @@
         }
 
         .ba-color {
-            background-color: $yellow;
+            background-color: $yelloow-01;
             width: 200px;
             height: 50px;
             display: inline-block;
@@ -105,6 +89,24 @@
     }
 }
 
+.link-text {
+    a {
+        color: $font-color;
+        text-decoration: none;
+        padding-right: 10px;
+        display: inline-block;
+
+        .fa-angle-double-right {
+            padding-left: 4px;
+        }
+
+        &:hover {
+            color: $carrot-01;
+            text-decoration: underline;
+        }
+    }
+}
+
 @include tb {
     .about-wrapper {
         padding-bottom: 60px;
@@ -114,7 +116,8 @@
             margin: 0 auto;
 
             .main-ttl {
-                font-size: 4.0rem;
+                @include main-ttl-pc;
+
             }
 
             .about-sec {
