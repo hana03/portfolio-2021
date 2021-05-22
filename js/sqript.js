@@ -12,6 +12,10 @@ $('.fa-bars').on('click', function () {
 $('.header-nav-sp').on('click', function () {
     $('.header-nav-sp').fadeOut();
 });
+$('.fa-times').on('click', function () {
+    $('.header-nav-sp').fadeOut();
+});
+
 
 
 // $(document).ready(funcytion(){

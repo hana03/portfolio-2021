@@ -16,8 +16,8 @@
         .header-logo {
             font-size: 2.4rem;
             letter-spacing: 0.1em;
-           
-            a{
+
+            a {
                 text-decoration: none;
                 color: $white;
             }
@@ -30,6 +30,19 @@
     }
 
     .header-nav-sp {
+        position: fixed;
+        top: 0;
+
+        .fa-times {
+            position: absolute;
+            z-index: 20;
+            right: 31px;
+            bottom: 21px;
+            top: 7px;
+            font-size: 30px;
+            color: #fff;
+        }
+
         ul {
             background-color: $ba-color-black-sp;
             height: 100vh;
@@ -74,7 +87,8 @@
             .header-logo {
                 align-self: flex-start;
                 line-height: 75px;
-                a{
+
+                a {
                     line-height: 75px;
                     display: inline-block;
                 }
@@ -102,7 +116,8 @@
                             color: $white;
                             font-size: 2.4rem;
                             padding: 0 20px;
-                            &:hover{
+
+                            &:hover {
                                 color: $green;
                             }
                         }
@@ -112,4 +127,3 @@
         }
     }
 }
-
