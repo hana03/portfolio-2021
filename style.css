@@ -776,6 +776,8 @@ input, select {
   width: 100%;
   height: 260px;
   vertical-align: bottom;
+  border: 1px solid #838282;
+  box-sizing: border-box;
 }
 
 .works-wrapper .inner .works-img .img-filter .img-mask {
@@ -917,6 +919,100 @@ main .inner .nav-list li a {
 main .inner .nav-list li a:hover {
   color: #d76735;
   text-decoration: underline;
+}
+
+main .inner .archive-wrapper .main-ttl {
+  font-size: 3.0rem;
+  line-height: 2.4em;
+  letter-spacing: 0.05em;
+  color: #525252;
+  margin-bottom: 35px;
+  text-align: center;
+  display: inline-block;
+}
+
+main .inner .archive-wrapper .works-img {
+  display: flex;
+  flex-direction: column;
+}
+
+main .inner .archive-wrapper .works-img .img-filter {
+  margin: 10px 0;
+  height: 260px;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+main .inner .archive-wrapper .works-img .img-filter img {
+  width: 100%;
+  height: 260px;
+  vertical-align: bottom;
+  border: 1px solid #838282;
+  box-sizing: border-box;
+}
+
+main .inner .archive-wrapper .works-img .img-filter .img-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.6s ease;
+  transform: scale(0);
+}
+
+main .inner .archive-wrapper .works-img .img-filter .img-mask .img-cap {
+  font-size: 150%;
+  color: #fff;
+  padding-top: 80px;
+}
+
+main .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 900px) {
+  .single-key-visual .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  main .inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  main .inner .archive-wrapper {
+    padding-bottom: 60px;
+  }
+  main .inner .archive-wrapper .main-ttl {
+    font-size: 4.0rem;
+    line-height: 2.4em;
+    letter-spacing: 0.05em;
+    color: #525252;
+    margin-bottom: 45px;
+  }
+  main .inner .archive-wrapper .works-img {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  main .inner .archive-wrapper .works-img .img-filter {
+    width: 40%;
+    height: 100%;
+  }
+  main .inner .archive-wrapper .works-img .img-filter img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .single-key-visual .inner {
+    padding: 0;
+  }
+  main .inner {
+    padding: 0%;
+  }
 }
 
 main .inner {
