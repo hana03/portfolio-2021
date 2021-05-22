@@ -38,9 +38,9 @@ $(function () {
 
 // works
 
-function ChangeImage(imgid, newimg) {
-    document.getElementById(imgid).src = newimg;
-}
+// function ChangeImage(imgid, newimg) {
+//     document.getElementById(imgid).src = newimg;
+// }
 
 
 $(function () {

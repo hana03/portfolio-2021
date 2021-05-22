@@ -39,7 +39,10 @@ main {
                     dd {
                         margin: 0px 0px 20px 13px;
                         @include main-text;
+                        .text-br{
+                            margin-bottom: 10px;
 
+                        }
                         ul {
                             margin-left: 20px;
                         }
@@ -120,24 +123,41 @@ main {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        border-top: solid 1px tomato;
+        border-top: solid 1px $brwn;
         width: 100%;
         padding: 30px 0;
 
         li {
-            width: 180px;
-            height: 35px;
+            width: 140px;
+            height: 32px;
+            border:1px solid $bk-color ;
             line-height: 35px;
             text-align: center;
+            .fa-angle-double-left {
+                margin-right: 5px;
+                vertical-align: middle;
+            }
+         
 
             a {
                 text-decoration: none;
-                color: tomato;
+                display: inline-block;
+                color: $brwn;
                 line-height: 35px;
 
                 .fa-angle-double-right {
-                    margin-right: 5px;
+                    margin-left: 5px;
+                    vertical-align: middle;
                 }
+                // &:hover{
+                //     color: $carrot-01;
+                //     text-decoration: underline;
+                // }
+            }
+        }
+        .next{
+            &:hover{
+                background-color: #e1d7ce;
             }
         }
     }
@@ -153,8 +173,8 @@ main {
                 .main-ttl {
                     @include main-ttl-pc;
                 }
-
-                width: 100%;
+               
+                
                 .portfolio-sec{
                     .portfolio-img{
                         text-align: center;
@@ -162,6 +182,11 @@ main {
                             width: 70%;
                         }
                     }
+                    .portfolio-text{
+                     padding-bottom: 50px;
+
+                    }
+    
                 }
             }
         }

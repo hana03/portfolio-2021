@@ -171,6 +171,8 @@ input, select {
 
 .header .header-nav-sp ul li a:hover {
   color: #5e9b84;
+  background-color: #4b4747;
+  opacity: 0.8;
 }
 
 .header .header-nav-pc {
@@ -914,6 +916,10 @@ main .inner .nav-list li a {
   text-decoration: none;
 }
 
+main .inner .nav-list li a .fa-home {
+  margin-right: 5px;
+}
+
 main .inner .nav-list li a:hover {
   color: #d76735;
   text-decoration: underline;
@@ -936,7 +942,6 @@ main .inner .archive-wrapper .works-img {
 
 main .inner .archive-wrapper .works-img .img-filter {
   margin: 10px 0;
-  height: 260px;
   position: relative;
   display: inline-block;
   max-width: 100%;
@@ -944,7 +949,6 @@ main .inner .archive-wrapper .works-img .img-filter {
 
 main .inner .archive-wrapper .works-img .img-filter img {
   width: 100%;
-  height: 260px;
   vertical-align: bottom;
   border: 1px solid #838282;
   box-sizing: border-box;
@@ -975,6 +979,9 @@ main .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
   .single-key-visual .inner {
     max-width: 1100px;
     margin: 0 auto;
+  }
+  .single-key-visual .main-ttl {
+    font-size: 5.2rem;
   }
   main .inner {
     max-width: 1100px;
@@ -1057,6 +1064,10 @@ main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd {
   margin-bottom: 20px;
 }
 
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd .text-br {
+  margin-bottom: 10px;
+}
+
 main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd ul {
   margin-left: 20px;
 }
@@ -1134,35 +1145,44 @@ main .page-link {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px tomato;
+  border-top: solid 1px #8b7466;
   width: 100%;
   padding: 30px 0;
 }
 
 main .page-link li {
-  width: 180px;
-  height: 35px;
+  width: 140px;
+  height: 32px;
+  border: 1px solid #6d6969;
   line-height: 35px;
   text-align: center;
 }
 
+main .page-link li .fa-angle-double-left {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
 main .page-link li a {
   text-decoration: none;
-  color: tomato;
+  display: inline-block;
+  color: #8b7466;
   line-height: 35px;
 }
 
 main .page-link li a .fa-angle-double-right {
-  margin-right: 5px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+main .page-link .next:hover {
+  background-color: #e1d7ce;
 }
 
 @media screen and (min-width: 900px) {
   main .inner {
     max-width: 1100px;
     margin: 0 auto;
-  }
-  main .inner .portfolio-wrapper {
-    width: 100%;
   }
   main .inner .portfolio-wrapper .main-ttl {
     font-size: 4.0rem;
@@ -1176,5 +1196,8 @@ main .page-link li a .fa-angle-double-right {
   }
   main .inner .portfolio-wrapper .portfolio-sec .portfolio-img img {
     width: 70%;
+  }
+  main .inner .portfolio-wrapper .portfolio-sec .portfolio-text {
+    padding-bottom: 50px;
   }
 }
