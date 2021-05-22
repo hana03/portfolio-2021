@@ -14,8 +14,12 @@ main {
         }
 
         .portfolio-sec {
-            // display: flex;
-            // flex-direction: column;
+            .portfolio-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
 
             .portfolio-text {
                 width: 100%;
@@ -142,12 +146,23 @@ main {
 @include tb {
     main {
         .inner {
-            width: 1100px;
+            max-width: 1100px;
             margin: 0 auto;
 
             .portfolio-wrapper {
+                .main-ttl {
+                    @include main-ttl-pc;
+                }
 
                 width: 100%;
+                .portfolio-sec{
+                    .portfolio-img{
+                        text-align: center;
+                        img{
+                            width: 70%;
+                        }
+                    }
+                }
             }
         }
     }
