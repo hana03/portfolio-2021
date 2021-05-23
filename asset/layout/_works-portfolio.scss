@@ -14,9 +14,10 @@ main {
         }
 
         .portfolio-sec {
-            .portfolio-img{
+            .portfolio-img {
                 width: 100%;
-                img{
+
+                img {
                     width: 100%;
                 }
             }
@@ -25,26 +26,27 @@ main {
                 width: 100%;
 
                 .profile-list {
-                    dt {
-                        font-size: 2.0rem;
-                        line-height: 1em;
-                        margin-bottom: 8px;
+                    .main-sub-ttl {
+                        @include main-sub-ttl;
                         border-left: 4px solid $brwn;
-                        padding: 7px;
-                        display: inline-block;
-                        font-weight: bold;
-
+                        padding: 3px 0 3px 5px;
                     }
 
-                    dd {
+                    .main-text {
                         margin: 0px 0px 20px 13px;
                         @include main-text;
-                        .text-br{
+
+                        .text-br {
                             margin-bottom: 10px;
 
                         }
-                        ul {
-                            margin-left: 20px;
+                    }
+
+                    ul {
+                        margin-left: 32px;
+
+                        li {
+                            @include main-text;
                         }
                     }
                 }
@@ -57,27 +59,30 @@ main {
                     a {
                         margin-bottom: 10px;
                     }
+
+                    .fa-angle-double-right {
+                        vertical-align: middle;
+                    }
                 }
 
                 .site-img-btn {
                     display: flex;
-                    margin-bottom: 30px;
+                    justify-content: space-between;
+                    margin-bottom: 50px;
                     list-style-type: none;
 
                     .img-btn {
-                        width: 170px;
-                        color: $green;
-                        border: 2px solid $green;
-                        height: 35px;
-                        line-height: 35px;
-                        text-align: center;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        margin-right: 10px;
+                       @include btn;
+                       width: 160px;
+                    //    margin-right: 10px;
 
                         &:hover {
-                            background-color: $yelloow-01;
-                            // color: $white;
+                            background-color: #d4d0c6;
+                            text-decoration: underline;
+    
+                        }
+                        &:first-child{
+                            margin-right: 10px;
                         }
                     }
 
@@ -123,40 +128,34 @@ main {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        border-top: solid 1px $brwn;
+        border-top: solid 1px $font-color;
         width: 100%;
         padding: 30px 0;
 
         li {
-            width: 140px;
-            height: 32px;
-            border:1px solid $bk-color ;
-            line-height: 35px;
-            text-align: center;
+            @include btn;
+            width: 95px;
+
             .fa-angle-double-left {
                 margin-right: 5px;
                 vertical-align: middle;
             }
-         
 
             a {
                 text-decoration: none;
                 display: inline-block;
-                color: $brwn;
+                color: $font-color;
                 line-height: 35px;
 
                 .fa-angle-double-right {
                     margin-left: 5px;
                     vertical-align: middle;
                 }
-                // &:hover{
-                //     color: $carrot-01;
-                //     text-decoration: underline;
-                // }
             }
         }
-        .next{
-            &:hover{
+
+        .next {
+            &:hover {
                 background-color: #e1d7ce;
             }
         }
@@ -173,20 +172,20 @@ main {
                 .main-ttl {
                     @include main-ttl-pc;
                 }
-               
-                
-                .portfolio-sec{
-                    .portfolio-img{
+
+                .portfolio-sec {
+                    .portfolio-img {
                         text-align: center;
-                        img{
+
+                        img {
                             width: 70%;
                         }
                     }
-                    .portfolio-text{
-                     padding-bottom: 50px;
+
+                    .portfolio-text {
+                        padding-bottom: 50px;
 
                     }
-    
                 }
             }
         }

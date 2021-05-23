@@ -46,7 +46,6 @@
                     dd {
                         // width: 70%;
                         text-align: left;
-                        white-space: nowrap;
                         @include main-text;
                         font-size: 1.6rem;
                     }
@@ -55,9 +54,9 @@
                
 
                 .profile-text {
-                    text-align: left;
+                    // text-align: left;
                     @include main-text;
-                    margin-top: 20px;
+                    // margin-top: 20px;
                 }
             }
         }
@@ -98,6 +97,7 @@
 
         .fa-angle-double-right {
             padding-left: 4px;
+            vertical-align: middle;
         }
 
         &:hover {

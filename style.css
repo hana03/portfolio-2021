@@ -118,7 +118,7 @@ input, select {
 .header .inner {
   display: flex;
   justify-content: space-between;
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .header .inner .header-logo {
@@ -195,6 +195,7 @@ input, select {
   .header .pc-inner .header-logo {
     align-self: flex-start;
     line-height: 75px;
+    font-size: 3.2rem;
   }
   .header .pc-inner .header-logo a {
     line-height: 75px;
@@ -271,9 +272,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-0 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -283,9 +281,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-1 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -295,9 +290,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-2 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -307,9 +299,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-3 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -319,9 +308,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-4 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -332,9 +318,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-5 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -344,9 +327,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box-6 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -356,9 +336,6 @@ input, select {
 }
 
 .key-visual-wrapper .key-visual-sec .box11 {
-  width: 2rem;
-  height: 2rem;
-  margin: 20px;
   width: 25px;
   height: 25px;
   margin: 20px;
@@ -471,7 +448,6 @@ input, select {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
 }
@@ -504,8 +480,8 @@ input, select {
 
 .about-wrapper .inner .about-sec .profile .profile-list dt {
   float: left;
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
   font-size: 1.6rem;
@@ -513,21 +489,18 @@ input, select {
 
 .about-wrapper .inner .about-sec .profile .profile-list dd {
   text-align: left;
-  white-space: nowrap;
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
   font-size: 1.6rem;
 }
 
 .about-wrapper .inner .about-sec .profile .profile-text {
-  text-align: left;
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
 
 .about-wrapper .inner .ba-color {
@@ -575,6 +548,7 @@ input, select {
 
 .link-text a .fa-angle-double-right {
   padding-left: 4px;
+  vertical-align: middle;
 }
 
 .link-text a:hover {
@@ -594,7 +568,6 @@ input, select {
     font-size: 4.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    color: #525252;
     margin-bottom: 45px;
   }
   .about-wrapper .inner .about-sec {
@@ -642,7 +615,6 @@ input, select {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
 }
@@ -686,8 +658,8 @@ input, select {
 }
 
 .skile-wrapper .inner ul .skile-list .main-text {
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
@@ -718,7 +690,6 @@ input, select {
     font-size: 4.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    color: #525252;
     margin-bottom: 45px;
   }
   .skile-wrapper .inner .main-sub-ttl {
@@ -756,7 +727,6 @@ input, select {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
 }
@@ -792,9 +762,10 @@ input, select {
 }
 
 .works-wrapper .inner .works-img .img-filter .img-mask .img-cap {
-  font-size: 150%;
+  font-size: 3.6rem;
+  padding-left: 20px;
   color: #fff;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 .works-wrapper .inner .works-img .img-filter:hover .img-mask {
@@ -849,7 +820,6 @@ input, select {
     font-size: 4.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    color: #525252;
     margin-bottom: 45px;
   }
   .works-wrapper .inner .works-img {
@@ -892,7 +862,6 @@ input, select {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
   text-align: left;
@@ -925,11 +894,19 @@ main .inner .nav-list li a:hover {
   text-decoration: underline;
 }
 
+main .inner .nav-list li .fa-angle-right {
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+main .inner .nav-list .nav-text {
+  font-weight: bold;
+}
+
 main .inner .archive-wrapper .main-ttl {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
   display: inline-block;
@@ -966,9 +943,10 @@ main .inner .archive-wrapper .works-img .img-filter .img-mask {
 }
 
 main .inner .archive-wrapper .works-img .img-filter .img-mask .img-cap {
-  font-size: 150%;
+  font-size: 3.6rem;
+  padding-left: 20px;
   color: #fff;
-  padding-top: 80px;
+  padding-top: 100px;
 }
 
 main .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
@@ -994,7 +972,6 @@ main .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
     font-size: 4.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    color: #525252;
     margin-bottom: 45px;
   }
   main .inner .archive-wrapper .works-img {
@@ -1028,7 +1005,6 @@ main .portfolio-wrapper .main-ttl {
   font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  color: #525252;
   margin-bottom: 35px;
   text-align: center;
   display: inline-block;
@@ -1046,30 +1022,36 @@ main .portfolio-wrapper .portfolio-sec .portfolio-text {
   width: 100%;
 }
 
-main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dt {
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list .main-sub-ttl {
   font-size: 2.0rem;
-  line-height: 1em;
-  margin-bottom: 8px;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
   border-left: 4px solid #8b7466;
-  padding: 7px;
-  display: inline-block;
-  font-weight: bold;
+  padding: 3px 0 3px 5px;
 }
 
-main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd {
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list .main-text {
   margin: 0px 0px 20px 13px;
-  font-size: 1.8rem;
-  line-height: 1.4em;
+  font-size: 1.5rem;
+  line-height: 2.7rem;
   letter-spacing: 0.1em;
   margin-bottom: 20px;
 }
 
-main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd .text-br {
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list .main-text .text-br {
   margin-bottom: 10px;
 }
 
-main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list dd ul {
-  margin-left: 20px;
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list ul {
+  margin-left: 32px;
+}
+
+main .portfolio-wrapper .portfolio-sec .portfolio-text .profile-list ul li {
+  font-size: 1.5rem;
+  line-height: 2.7rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
 }
 
 main .portfolio-wrapper .portfolio-sec .portfolio-text .link-text {
@@ -1082,26 +1064,33 @@ main .portfolio-wrapper .portfolio-sec .portfolio-text .link-text a {
   margin-bottom: 10px;
 }
 
+main .portfolio-wrapper .portfolio-sec .portfolio-text .link-text .fa-angle-double-right {
+  vertical-align: middle;
+}
+
 main .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn {
   display: flex;
-  margin-bottom: 30px;
+  justify-content: space-between;
+  margin-bottom: 50px;
   list-style-type: none;
 }
 
 main .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn {
-  width: 170px;
-  color: #5e9b84;
-  border: 2px solid #5e9b84;
-  height: 35px;
-  line-height: 35px;
+  width: 140px;
+  height: 32px;
+  border: 1px solid #6d6969;
+  line-height: 32px;
   text-align: center;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 10px;
+  width: 160px;
 }
 
 main .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:hover {
-  background-color: #fbd266;
+  background-color: #d4d0c6;
+  text-decoration: underline;
+}
+
+main .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:first-child {
+  margin-right: 10px;
 }
 
 main .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .btn:first-child {
@@ -1145,7 +1134,7 @@ main .page-link {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  border-top: solid 1px #8b7466;
+  border-top: solid 1px #525252;
   width: 100%;
   padding: 30px 0;
 }
@@ -1154,8 +1143,9 @@ main .page-link li {
   width: 140px;
   height: 32px;
   border: 1px solid #6d6969;
-  line-height: 35px;
+  line-height: 32px;
   text-align: center;
+  width: 95px;
 }
 
 main .page-link li .fa-angle-double-left {
@@ -1166,7 +1156,7 @@ main .page-link li .fa-angle-double-left {
 main .page-link li a {
   text-decoration: none;
   display: inline-block;
-  color: #8b7466;
+  color: #525252;
   line-height: 35px;
 }
 
@@ -1188,7 +1178,6 @@ main .page-link .next:hover {
     font-size: 4.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    color: #525252;
     margin-bottom: 45px;
   }
   main .inner .portfolio-wrapper .portfolio-sec .portfolio-img {
