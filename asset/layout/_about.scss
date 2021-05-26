@@ -38,13 +38,11 @@
 
                     dt {
                         float: left;
-                        // width: 28%;
                         @include main-text;
                         font-size: 1.6rem;
                     }
 
                     dd {
-                        // width: 70%;
                         text-align: left;
                         @include main-text;
                         font-size: 1.6rem;
@@ -52,11 +50,9 @@
                 }
 
                
-
                 .profile-text {
-                    // text-align: left;
+                    text-align: left;
                     @include main-text;
-                    // margin-top: 20px;
                 }
             }
         }

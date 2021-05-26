@@ -58,38 +58,35 @@
                 &:hover .img-mask {
                     transform: scale(1);
                 }
-
-                // }
             }
         }
     }
 
 
-    .ba-color {
-        background-color: #fbd266;
-        width: 200px;
+    // .ba-color {
+    // background-color: #fbd266;
+    // width: 200px;
+    // height: 50px;
+    // display: inline-block;
+    // position: relative;
+    // margin: 30px;
+    // position: relative;
+
+    .link-btn {
+        width: 100%;
         height: 50px;
+        background-color: tomato;
+        line-height: 50px;
+        text-decoration: none;
+        color: $white;
         display: inline-block;
-        position: relative;
-        margin: 30px;
-        position: relative;
 
-        .link-btn {
-            @include link-btn;
-
-            &:hover {
-                background-color: #7e9c96;
-            }
-
-            &:active {
-                position: absolute;
-                color: white;
-                top: 0;
-                right: 0;
-            }
+        &:hover {
+            background-color: #7e9c96;
         }
     }
 }
+
 
 @include tb {
     .works-wrapper {

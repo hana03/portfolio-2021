@@ -3,119 +3,133 @@
 @import "asset/libs/_mixin.scss";
 
 main {
-    .inner {
-        padding: 0 10px;
-    }
+    .bk {
+        background-color: #fff8ef;
 
-    .portfolio-wrapper {
-        .main-ttl {
-            @include main-ttl;
-            display: inline-block;
-        }
 
-        .portfolio-sec {
-            .portfolio-img {
-                width: 100%;
+        .inner {
+            padding: 0 10px;
 
-                img {
-                    width: 100%;
-                }
-            }
-
-            .portfolio-text {
-                width: 100%;
-
-                .profile-list {
-                    .main-sub-ttl {
-                        @include main-sub-ttl;
-                        border-left: 4px solid $brwn;
-                        padding: 3px 0 3px 5px;
-                    }
-
-                    .main-text {
-                        margin: 0px 0px 20px 13px;
-                        @include main-text;
-
-                        .text-br {
-                            margin-bottom: 10px;
-
-                        }
-                    }
-
-                    ul {
-                        margin-left: 32px;
-
-                        li {
-                            @include main-text;
-                        }
-                    }
+            .portfolio-wrapper {
+                .main-ttl {
+                    @include main-ttl;
+                    display: inline-block;
                 }
 
-                .link-text {
-                    margin-bottom: 10px;
-                    display: inline-flex;
-                    flex-direction: column;
+                .portfolio-sec {
+                    .portfolio-img {
+                        width: 100%;
+                        margin-bottom: 30px;
 
-                    a {
-                        margin-bottom: 10px;
-                    }
-
-                    .fa-angle-double-right {
-                        vertical-align: middle;
-                    }
-                }
-
-                .site-img-btn {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-bottom: 50px;
-                    list-style-type: none;
-
-                    .img-btn {
-                       @include btn;
-                       width: 160px;
-                    //    margin-right: 10px;
-
-                        &:hover {
-                            background-color: #d4d0c6;
-                            text-decoration: underline;
-    
-                        }
-                        &:first-child{
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .btn:first-child {
-                        margin-right: 5px;
-                    }
-                }
-
-                .site-img-pc,
-                .site-img-sp {
-                    position: relative;
-
-                    .site-img-container {
-                        z-index: 100;
-                        position: fixed;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
-                        left: 0;
-                        text-align: center;
-
-                        .site-img-content {
-                            position: absolute;
-                            text-align: center;
-                            background: rgba(0, 0, 0, 0.9);
+                        img {
                             width: 100%;
-                            height: 100%;
+                        }
+                    }
 
-                            .fa-times-circle {
-                                position: absolute;
-                                font-size: 20px;
-                                top: 20px;
-                                right: 20px;
+                    .portfolio-text {
+                        width: 100%;
+
+                        .profile-list {
+                            .main-sub-ttl {
+                                @include main-sub-ttl;
+                                border-left: 4px solid $brwn;
+                                padding: 3px 0 3px 5px;
+                            }
+
+                            .main-text {
+                                margin: 0px 0px 20px 13px;
+                                @include main-text;
+
+                                .text-br {
+                                    margin-bottom: 10px;
+                                }
+                                a{
+                                    color: $font-color; 
+                                    text-decoration: none;
+                                    .fa-external-link-alt{
+                                        margin-left: 5px;
+
+                                    }
+                                    &:hover {
+                                        color: $carrot-01;
+                                        text-decoration: underline;
+                                    }
+                                }
+                            }
+
+                            ul {
+                                margin-left: 32px;
+
+                                li {
+                                    @include main-text;
+                                }
+                            }
+                        }
+
+                        .link-text {
+                            margin-bottom: 20px;
+                            display: inline-flex;
+                            flex-direction: column;
+
+                            a {
+                                &:first-child {
+                                    margin-bottom: 10px;
+                                }
+                            }
+                        }
+
+                        .site-img-btn {
+                            display: flex;
+                            flex-direction: column;
+                            margin-bottom: 50px;
+                            list-style-type: none;
+
+                            .img-btn {
+                                @include img-btn;
+                                margin-bottom: 20px;
+                                background-color: $white;
+
+                                &:hover {
+                                    background-color: #d4d0c6;
+                                }
+
+                                &:first-child {
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .btn:first-child {
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .site-img-pc,
+                        .site-img-sp {
+                            position: relative;
+
+                            .site-img-container {
+                                z-index: 100;
+                                position: fixed;
+                                top: 0;
+                                right: 0;
+                                bottom: 0;
+                                left: 0;
+                                text-align: center;
+
+                                .site-img-content {
+                                    position: absolute;
+                                    text-align: center;
+                                    background: rgba(0, 0, 0, 0.9);
+                                    width: 100%;
+                                    height: 100%;
+
+                                    .fa-times-circle {
+                                        position: absolute;
+                                        font-size: 20px;
+                                        top: 20px;
+                                        right: 20px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -130,7 +144,8 @@ main {
         justify-content: space-between;
         border-top: solid 1px $font-color;
         width: 100%;
-        padding: 30px 0;
+        padding: 100px 0 20px 0;
+
 
         li {
             @include btn;
@@ -162,29 +177,43 @@ main {
     }
 }
 
+
 @include tb {
     main {
-        .inner {
-            max-width: 1100px;
+        .bk {
             margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
 
-            .portfolio-wrapper {
-                .main-ttl {
-                    @include main-ttl-pc;
-                }
+            .inner {
+                max-width: 1100px;
+                margin: 0 auto;
 
-                .portfolio-sec {
-                    .portfolio-img {
-                        text-align: center;
-
-                        img {
-                            width: 70%;
-                        }
+                .portfolio-wrapper {
+                    .main-ttl {
+                        @include main-ttl-pc;
                     }
 
-                    .portfolio-text {
-                        padding-bottom: 50px;
+                    .portfolio-sec {
+                        .portfolio-img {
+                            text-align: center;
 
+                            img {
+                                width: 70%;
+                            }
+                        }
+
+                        .portfolio-text {
+                            padding-bottom: 50px;
+                            .site-img-btn{
+                                flex-direction: row;
+                                .img-btn{
+                                    width: 200px;
+                                }
+                            }
+
+                   
+                        }
                     }
                 }
             }
