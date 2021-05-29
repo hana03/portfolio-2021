@@ -4,12 +4,7 @@
 
 main {
     .bk {
-        background-color: #fff8ef;
-
-
         .inner {
-            padding: 0 10px;
-
             .portfolio-wrapper {
                 .main-ttl {
                     @include main-ttl;
@@ -32,8 +27,9 @@ main {
                         .profile-list {
                             .main-sub-ttl {
                                 @include main-sub-ttl;
-                                border-left: 4px solid $brwn;
+                                border-left: 2px solid $brwn;
                                 padding: 3px 0 3px 5px;
+                                background-color: #fdefe0;
                             }
 
                             .main-text {
@@ -43,16 +39,23 @@ main {
                                 .text-br {
                                     margin-bottom: 10px;
                                 }
+                            }
+                            .h4-ttl{
+                                @include h4-ttl;
+                                margin-left: 13px;
+                                margin-bottom: 0;
+                            }
+                            .link-box{
+                                @include main-text;
+                                margin-left: 13px;
                                 a{
-                                    color: $font-color; 
-                                    text-decoration: none;
+                                    @include link-text-a;
                                     .fa-external-link-alt{
-                                        margin-left: 5px;
-
+                                        @include link-text-fa;
                                     }
-                                    &:hover {
-                                        color: $carrot-01;
-                                        text-decoration: underline;
+
+                                    &:hover{
+                                        @include link-text-hov;
                                     }
                                 }
                             }
@@ -85,12 +88,11 @@ main {
                             list-style-type: none;
 
                             .img-btn {
-                                @include img-btn;
+                                @include btn;
                                 margin-bottom: 20px;
-                                background-color: $white;
 
                                 &:hover {
-                                    background-color: #d4d0c6;
+                                    @include btn-hov;
                                 }
 
                                 &:first-child {
@@ -146,14 +148,12 @@ main {
         width: 100%;
         padding: 100px 0 20px 0;
 
-
         li {
-            @include btn;
+            @include li-btn;
             width: 95px;
 
             .fa-angle-double-left {
-                margin-right: 5px;
-                vertical-align: middle;
+                @include link-text-fa;
             }
 
             a {
@@ -162,9 +162,8 @@ main {
                 color: $font-color;
                 line-height: 35px;
 
-                .fa-angle-double-right {
-                    margin-left: 5px;
-                    vertical-align: middle;
+                .fa-angle-double-left {
+                    @include link-text-fa;
                 }
             }
         }
@@ -172,11 +171,11 @@ main {
         .next {
             &:hover {
                 background-color: #e1d7ce;
+                opacity: 0.7;
             }
         }
     }
 }
-
 
 @include tb {
     main {
@@ -186,8 +185,8 @@ main {
             padding: 20px;
 
             .inner {
-                max-width: 1100px;
-                margin: 0 auto;
+                // max-width: 1100px;
+                // margin: 0 auto;
 
                 .portfolio-wrapper {
                     .main-ttl {
@@ -199,20 +198,26 @@ main {
                             text-align: center;
 
                             img {
-                                width: 70%;
+                                width: 100%;
                             }
                         }
 
                         .portfolio-text {
                             padding-bottom: 50px;
-                            .site-img-btn{
+                            .main-sub-ttl{
+                            margin: 40px 0;
+                            }
+                            .link-text{
+                                margin-top: 20px;
+                            }
+
+                            .site-img-btn {
                                 flex-direction: row;
-                                .img-btn{
+
+                                .img-btn {
                                     width: 200px;
                                 }
                             }
-
-                   
                         }
                     }
                 }

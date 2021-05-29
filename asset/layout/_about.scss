@@ -49,7 +49,6 @@
                     }
                 }
 
-               
                 .profile-text {
                     text-align: left;
                     @include main-text;
@@ -86,19 +85,15 @@
 
 .link-text {
     a {
-        color: $font-color;
-        text-decoration: none;
-        padding-right: 10px;
-        display: inline-block;
+        @include link-text-a;
 
-        .fa-angle-double-right {
-            padding-left: 4px;
-            vertical-align: middle;
+        .fa-angle-double-right,
+        .fa-external-link-alt {
+            @include link-text-fa;
         }
 
         &:hover {
-            color: $carrot-01;
-            text-decoration: underline;
+            @include link-text-hov;
         }
     }
 }
