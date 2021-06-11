@@ -834,7 +834,7 @@ input, select {
 .single-key-visual {
   padding-top: 50px;
   width: 100%;
-  background: linear-gradient(25deg, #f3e5a7, #FFC778, #f0efb2);
+  background: linear-gradient(25deg, #f3e5a7, #FFC778);
 }
 
 .single-key-visual .inner {
@@ -942,21 +942,9 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 }
 
 @media screen and (min-width: 900px) {
-  .single-key-visual .inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
   .single-key-visual .main-ttl {
     margin-bottom: 35px;
     font-size: 5.2rem;
-  }
-  main .bk {
-    max-width: 1200px;
-    padding: 20px;
-  }
-  main .bk .inner {
-    max-width: 900px;
-    margin: 0 auto;
   }
   main .bk .inner .archive-wrapper {
     padding-bottom: 60px;
@@ -969,12 +957,12 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
   }
   main .bk .inner .archive-wrapper .works-img {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
   main .bk .inner .archive-wrapper .works-img .img-filter {
-    width: 45%;
+    width: 33%;
     height: 100%;
+    margin-right: 20px;
   }
   main .bk .inner .archive-wrapper .works-img .img-filter img {
     width: 100%;
@@ -983,6 +971,8 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 
 @media screen and (min-width: 1200px) {
   .single-key-visual .inner {
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 0;
   }
   main .inner {
@@ -1207,6 +1197,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   display: inline-block;
   color: #525252;
   line-height: 35px;
+  width: 100%;
 }
 
 .page-link li a .fa-angle-double-left {
@@ -1214,7 +1205,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   vertical-align: middle;
 }
 
-.page-link .next:hover {
+.page-link .junp:hover {
   background-color: #e1d7ce;
   opacity: 0.7;
 }
