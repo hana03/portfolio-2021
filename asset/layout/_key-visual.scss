@@ -4,9 +4,7 @@
 @import "asset/libs/_mixin.scss";
 
 .key-visual-wrapper {
-    // background-color: #e7e0cf;
-    background-color: #f8e488;
-    // padding: 0 10px;
+    background-color: #fcf7ed;
     padding-top: 80px;
 
     .key-ttl {
@@ -107,11 +105,11 @@
         background: $green-01;
         animation-name: expansion;
         animation-duration: 12s;
-        animation-timing-function: ease-in;
+        // animation-timing-function: ease-in;
         animation-delay: 1s;
         animation-iteration-count: 2;
-        animation-direction: normal, reverse;
-        animation-fill-mode: forwards;
+        // animation-direction: normal, reverse;
+        // animation-fill-mode: forwards;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
     }
