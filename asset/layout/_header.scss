@@ -8,65 +8,69 @@
     z-index: 10;
     background-color: $ba-color-black;
 
-    .inner {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px;
+    // &.hide {
+    //     transform: translateY(-60px);
 
-        .header-logo {
-            font-size: 2.4rem;
-            letter-spacing: 0.1em;
+        .inner {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
 
-            a {
-                text-decoration: none;
+            .header-logo {
+                font-size: 2.4rem;
+                letter-spacing: 0.1em;
+
+                a {
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+
+            .fa-bars {
+                font-size: 24px;
                 color: $white;
             }
         }
 
-        .fa-bars {
-            font-size: 24px;
-            color: $white;
-        }
-    }
+        .header-nav-sp {
+            position: fixed;
+            top: 0;
 
-    .header-nav-sp {
-        position: fixed;
-        top: 0;
+            .fa-times {
+                position: absolute;
+                z-index: 20;
+                right: 31px;
+                bottom: 21px;
+                top: 7px;
+                font-size: 30px;
+                color: #fff;
+            }
 
-        .fa-times {
-            position: absolute;
-            z-index: 20;
-            right: 31px;
-            bottom: 21px;
-            top: 7px;
-            font-size: 30px;
-            color: #fff;
-        }
+            ul {
+                background-color: $ba-color-black-sp;
+                height: 100vh;
 
-        ul {
-            background-color: $ba-color-black-sp;
-            height: 100vh;
+                li {
+                    text-align: center;
+                    width: 100vw;
 
-            li {
-                text-align: center;
-                width: 100vw;
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        font-size: 2.4rem;
+                        padding: 20px 0;
+                        color: $white;
 
-                a {
-                    display: block;
-                    text-decoration: none;
-                    font-size: 2.4rem;
-                    padding: 20px 0;
-                    color: $white;
-
-                    &:hover {
-                        color: $green;
-                        background-color: rgb(75, 71, 71);
-                        opacity: 0.8;
+                        &:hover {
+                            color: $green;
+                            background-color: rgb(75, 71, 71);
+                            opacity: 0.8;
+                        }
                     }
                 }
             }
         }
-    }
+    // }
 
     .header-nav-pc {
         display: none;
@@ -86,19 +90,22 @@
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
-            .inner{
+            height: 75px;
+
+            .inner {
                 padding: 20px 0;
+
                 .header-logo {
                     align-self: flex-start;
                     line-height: 75px;
                     font-size: 3.2rem;
-    
+
                     a {
                         line-height: 75px;
                         display: inline-block;
                     }
                 }
-    
+
                 .fa-bars {
                     display: none;
                 }
@@ -113,13 +120,14 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                    height: 100%;
+                    height: 75px;
 
                     li {
                         padding: 0 20px;
 
                         a {
                             display: inline-block;
+                            height: 75px;
                             line-height: 75px;
                             text-decoration: none;
                             color: $white;

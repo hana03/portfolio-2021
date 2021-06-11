@@ -17,6 +17,24 @@ $('.fa-times').on('click', function () {
 });
 
 
+// メニュースクロール時非表示
+
+$(function(){
+    var pos = 0;
+    var header = $('header');
+    
+    $(window).on('scroll', function(){
+      if($(this).scrollTop() < pos ){
+        //上スクロール時の処理
+        header.slideDown();
+      }else{
+        //下スクロール時の処理
+        header.slideUp();
+      }
+      pos = $(this).scrollTop();
+    });
+  });
+
 
 // $(document).ready(funcytion(){
 //     $('.skile-list').each(function(){
