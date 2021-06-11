@@ -20,7 +20,7 @@ $('.fa-times').on('click', function () {
 // メニュースクロール時非表示
 
 $(function(){
-    var pos = 0;
+    var pos = 10;
     var header = $('header');
     
     $(window).on('scroll', function(){
@@ -31,7 +31,7 @@ $(function(){
         //下スクロール時の処理
         header.slideUp();
       }
-      pos = $(this).scrollTop();
+    //   pos = $(this).scrollTop();
     });
   });
 
