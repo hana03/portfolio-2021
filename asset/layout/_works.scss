@@ -5,11 +5,8 @@
 .works-wrapper {
     max-width: 100%;
     text-align: center;
-    background-image: url(./imge/bk-01.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
     padding-bottom: 30px;
+    background-color:#fff8ef;
 
     .inner {
         padding: 0 10px;
@@ -48,8 +45,6 @@
                     transition: all 1s ease;
                     transform: scale(0);
 
-                    
-
                     .img-cap {
                         font-size: 3.6rem;
                         padding-left: 20px;
@@ -72,13 +67,17 @@
         color: $font-color;
 
         &:hover {
-           @include btn-hov;
+            @include btn-hov;
         }
     }
 }
 
 @include tb {
     .works-wrapper {
+        background-image: url(./imge/bk-01.jpg);
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
         padding-bottom: 60px;
 
         .inner {
@@ -92,7 +91,7 @@
             .works-img {
                 flex-direction: row;
                 justify-content: space-around;
-              
+
 
                 .img-filter {
                     width: 33%;
@@ -105,7 +104,7 @@
                 }
             }
 
-            .btn{
+            .btn {
                 width: 200px;
             }
         }

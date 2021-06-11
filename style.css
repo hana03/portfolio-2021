@@ -707,11 +707,8 @@ input, select {
 .works-wrapper {
   max-width: 100%;
   text-align: center;
-  background-image: url(./imge/bk-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   padding-bottom: 30px;
+  background-color: #fff8ef;
 }
 
 .works-wrapper .inner {
@@ -770,7 +767,7 @@ input, select {
 }
 
 .works-wrapper .btn {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border: 1px solid #6d6969;
   background-color: #fff;
@@ -790,6 +787,10 @@ input, select {
 
 @media screen and (min-width: 900px) {
   .works-wrapper {
+    background-image: url(./imge/bk-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     padding-bottom: 60px;
   }
   .works-wrapper .inner {
@@ -1121,7 +1122,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn 
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border: 1px solid #6d6969;
   background-color: #fff;
