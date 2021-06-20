@@ -36,16 +36,6 @@ $(function(){
   });
 
 
-// $(document).ready(funcytion(){
-//     $('.skile-list').each(function(){
-//         if($(this).hasClass('active')){
-//             $(this)parent('dd')preve()
-//             .addClass('active');
-//             $(this).parents('dd').show();
-//         }
-//     })
-// });
-
 // skillの表示・非表示
 
 $(function () {
@@ -54,11 +44,7 @@ $(function () {
     });
 });
 
-// works
 
-// function ChangeImage(imgid, newimg) {
-//     document.getElementById(imgid).src = newimg;
-// }
 
 
 $(function () {
@@ -80,6 +66,7 @@ $(function () {
         $('.site-img-sp').fadeOut();
     });
 });
+    
 
 
 

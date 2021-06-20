@@ -46,7 +46,7 @@
             color: $white;
         }
 
-        ul {
+        .nev-list {
             background-color: $ba-color-black-sp;
             height: 100vh;
 
@@ -105,7 +105,7 @@
         .header-nav-pc {
             display: block;
 
-            ul {
+            .nev-list {
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
@@ -129,8 +129,16 @@
 }
 
 @include pc {
-    .pc-inner {
-        max-width: 1200px;
-        margin: 0 auto;
+    .header {
+        .pc-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+
+            .inner {
+                .header-logo {
+                    margin-left: 0;
+                }
+            }
+        }
     }
 }

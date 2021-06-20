@@ -154,17 +154,17 @@ input, select {
   color: #fff;
 }
 
-.header .header-nav-sp ul {
+.header .header-nav-sp .nev-list {
   background-color: #1f2020;
   height: 100vh;
 }
 
-.header .header-nav-sp ul li {
+.header .header-nav-sp .nev-list li {
   text-align: center;
   width: 100vw;
 }
 
-.header .header-nav-sp ul li a {
+.header .header-nav-sp .nev-list li a {
   display: block;
   text-decoration: none;
   font-size: 2.4rem;
@@ -172,7 +172,7 @@ input, select {
   color: #fff;
 }
 
-.header .header-nav-sp ul li a:hover {
+.header .header-nav-sp .nev-list li a:hover {
   color: #5e9b84;
   background-color: #4b4747;
   opacity: 0.8;
@@ -204,16 +204,16 @@ input, select {
   .header .header-nav-pc {
     display: block;
   }
-  .header .header-nav-pc ul {
+  .header .header-nav-pc .nev-list {
     list-style: none;
     display: flex;
     justify-content: space-around;
   }
-  .header .header-nav-pc ul li {
+  .header .header-nav-pc .nev-list li {
     display: flex;
     padding: 0 20px;
   }
-  .header .header-nav-pc ul li a {
+  .header .header-nav-pc .nev-list li a {
     display: inline-block;
     text-decoration: none;
     font-size: 2.4rem;
@@ -224,9 +224,12 @@ input, select {
 }
 
 @media screen and (min-width: 1200px) {
-  .pc-inner {
+  .header .pc-inner {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .header .pc-inner .inner .header-logo {
+    margin-left: 0;
   }
 }
 
@@ -444,10 +447,10 @@ input, select {
 }
 
 .about-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -606,10 +609,10 @@ input, select {
 }
 
 .skile-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -717,10 +720,10 @@ input, select {
 }
 
 .works-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -793,10 +796,6 @@ input, select {
     background-attachment: fixed;
     padding-bottom: 60px;
   }
-  .works-wrapper .inner {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
   .works-wrapper .inner .main-ttl {
     font-size: 4.0rem;
     line-height: 2.4em;
@@ -806,6 +805,7 @@ input, select {
   .works-wrapper .inner .works-img {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 50px;
   }
   .works-wrapper .inner .works-img .img-filter {
     width: 33%;
@@ -815,8 +815,18 @@ input, select {
   .works-wrapper .inner .works-img .img-filter img {
     width: 100%;
   }
+  .works-wrapper .inner .works-img .img-filter:last-child {
+    margin-right: 0;
+  }
   .works-wrapper .inner .btn {
-    width: 200px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-wrapper .inner {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -843,11 +853,12 @@ input, select {
 
 .single-key-visual .main-ttl {
   margin: 95px 0 10px;
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
+  font-size: 4.0rem;
   margin-bottom: 0;
   text-align: left;
   color: #fff;
@@ -892,12 +903,17 @@ main .bk .inner .nav-list li .fa-angle-right {
 }
 
 main .bk .inner .archive-wrapper .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
   display: inline-block;
+}
+
+main .bk .inner .archive-wrapper .list-ttl {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 main .bk .inner .archive-wrapper .works-img {
@@ -955,9 +971,13 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
     letter-spacing: 0.05em;
     margin-bottom: 45px;
   }
+  main .bk .inner .archive-wrapper .list-ttl {
+    font-size: 2.0rem;
+  }
   main .bk .inner .archive-wrapper .works-img {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
   main .bk .inner .archive-wrapper .works-img .img-filter {
     width: 33%;
@@ -971,7 +991,7 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 
 @media screen and (min-width: 1200px) {
   .single-key-visual .inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0;
   }
@@ -981,10 +1001,10 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 }
 
 main .bk .inner .portfolio-wrapper .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
   display: inline-block;
 }
@@ -1107,6 +1127,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text a:f
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
   list-style-type: none;
 }
@@ -1126,10 +1147,6 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:hover {
   color: #fff;
   background-color: #333332;
-}
-
-main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:first-child {
-  margin-right: 10px;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .btn:first-child {
@@ -1180,7 +1197,6 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
 
 .page-link li {
   width: 95px;
-  height: 32px;
   border: 1px solid #6d6969;
   line-height: 32px;
   text-align: center;
@@ -1188,8 +1204,8 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
 }
 
 .page-link li .fa-angle-double-left {
-  padding-left: 4px;
   vertical-align: middle;
+  padding-right: 4px;
 }
 
 .page-link li a {
@@ -1201,8 +1217,8 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
 }
 
 .page-link li a .fa-angle-double-left {
-  padding-left: 4px;
   vertical-align: middle;
+  padding-right: 4px;
 }
 
 .page-link .junp:hover {
@@ -1242,5 +1258,8 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   }
   main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn {
     width: 200px;
+  }
+  main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:first-child {
+    margin-right: 10px;
   }
 }

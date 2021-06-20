@@ -25,28 +25,31 @@ main {
                         width: 100%;
 
                         .profile-list {
-                            .contents-list{
+                            .contents-list {
                                 max-width: 100%;
                                 margin: 24px auto;
                                 list-style-type: none;
                                 border: solid 2px $brwn;
                                 border-radius: 3px;
                                 padding: 14px;
-                                .h4-ttl{
+
+                                .h4-ttl {
                                     text-decoration: underline $brwn;
                                     margin-bottom: 10px;
                                 }
-                                li{
-                                    a{
-                                    text-decoration: none;
-                                    @include link-text-a;
-                                    &:hover{
-                                        @include link-text-hov;
-                                    }
 
-                                }
+                                li {
+                                    a {
+                                        text-decoration: none;
+                                        @include link-text-a;
+
+                                        &:hover {
+                                            @include link-text-hov;
+                                        }
+                                    }
                                 }
                             }
+
                             .main-sub-ttl {
                                 @include main-sub-ttl;
                                 border-left: 2px solid $brwn;
@@ -110,19 +113,16 @@ main {
                         .site-img-btn {
                             display: flex;
                             flex-direction: column;
+                            align-items: center;
                             margin-bottom: 50px;
                             list-style-type: none;
 
                             .img-btn {
                                 @include btn;
-                                margin-bottom:20px;
+                                margin-bottom: 20px;
 
                                 &:hover {
                                     @include btn-hov;
-                                }
-
-                                &:first-child {
-                                    margin-right: 10px;
                                 }
                             }
 
@@ -150,8 +150,6 @@ main {
                                     background: rgba(0, 0, 0, 0.9);
                                     width: 100%;
 
-
-
                                     .fa-times-circle {
                                         position: absolute;
                                         font-size: 20px;
@@ -160,7 +158,6 @@ main {
                                         color: $carrot-01;
                                     }
                                 }
-
                             }
                         }
                     }
@@ -183,7 +180,9 @@ main {
         width: 95px;
 
         .fa-angle-double-left {
-            @include link-text-fa;
+            vertical-align: middle;
+            padding-right: 4px;
+
         }
 
         a {
@@ -194,7 +193,8 @@ main {
             width: 100%;
 
             .fa-angle-double-left {
-                @include link-text-fa;
+                vertical-align: middle;
+                padding-right: 4px;
             }
         }
     }
@@ -207,7 +207,6 @@ main {
     }
 }
 
-
 @include tb {
     main {
         .bk {
@@ -216,8 +215,6 @@ main {
             padding: 20px;
 
             .inner {
-                // max-width: 1100px;
-                // margin: 0 auto;
 
                 .portfolio-wrapper {
                     .main-ttl {
@@ -249,6 +246,10 @@ main {
 
                                 .img-btn {
                                     width: 200px;
+
+                                    &:first-child {
+                                        margin-right: 10px;
+                                    }
                                 }
                             }
                         }
