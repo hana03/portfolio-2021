@@ -1016,6 +1016,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-img {
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-img img {
   width: 100%;
+  border: 1px solid #838282;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text {
@@ -1120,7 +1121,14 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text {
   flex-direction: column;
 }
 
-main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text a:first-child {
+main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text .link_flex {
+  display: flex;
+  align-items: center;
+  margin: 0 0 13px 13px;
+  font-size: 1.4rem;
+}
+
+main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text .link_flex a:first-child {
   margin-bottom: 10px;
 }
 
@@ -1198,9 +1206,8 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
 .page-link li {
   width: 95px;
   border: 1px solid #6d6969;
-  line-height: 32px;
+  line-height: 35px;
   text-align: center;
-  width: 95px;
 }
 
 .page-link li .fa-angle-double-left {
