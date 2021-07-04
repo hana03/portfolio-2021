@@ -18,6 +18,7 @@ main {
 
                         img {
                             width: 100%;
+                            border: 1px solid rgb(131, 130, 130);
                         }
                     }
 
@@ -103,9 +104,16 @@ main {
                             display: inline-flex;
                             flex-direction: column;
 
-                            a {
-                                &:first-child {
-                                    margin-bottom: 10px;
+                            .link_flex{
+                                display: flex;
+                                align-items: center;
+                                margin: 0 0 13px 13px;
+                                font-size: 1.4rem;
+                         
+                                a {
+                                    &:first-child {
+                                        margin-bottom: 10px;
+                                    }
                                 }
                             }
                         }
@@ -177,12 +185,10 @@ main {
 
     li {
         @include li-btn;
-        width: 95px;
 
         .fa-angle-double-left {
             vertical-align: middle;
             padding-right: 4px;
-
         }
 
         a {
