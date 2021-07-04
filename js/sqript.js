@@ -10,10 +10,15 @@ $('.fa-bars').on('click', function () {
 })
 
 $('.header-nav-sp').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+
 });
+
 $('.fa-times').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+    
 });
 
 
@@ -43,9 +48,6 @@ $(function () {
         $(this).next().slideToggle();
     });
 });
-
-
-
 
 $(function () {
     $('.site-img-pc').hide();
