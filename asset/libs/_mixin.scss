@@ -46,10 +46,10 @@ $pink:#dcbdaf;
 }
 
 @mixin main-ttl {
-    font-size: 4.0rem;
+    font-size: 3.0rem;
     line-height: 2.4em;
     letter-spacing: 0.05em;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -121,7 +121,7 @@ $pink:#dcbdaf;
 }
 
 @mixin btn{
-    width: 100%;
+    width: 80%;
     height: 40px;
     border: 1px solid $bk-color;
     background-color: $white;
@@ -130,6 +130,7 @@ $pink:#dcbdaf;
     border-radius: 2px;
     box-shadow:4px 4px #d4d0c6;
 }
+
 @mixin btn-hov{
     color: $white;
     background-color: #333332;
@@ -137,9 +138,8 @@ $pink:#dcbdaf;
 
 @mixin li-btn{
     width: 95px;
-    height: 32px;
     border: 1px solid $bk-color;
-    line-height: 32px;
+    line-height: 35px;
     text-align: center;
 }
 

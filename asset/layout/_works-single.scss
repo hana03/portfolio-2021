@@ -5,9 +5,7 @@
 .single-key-visual {
     padding-top: 50px;
     width: 100%;
-    // background: linear-gradient(25deg, #f8e488, #FFC778, #dffc3b);
-    background: linear-gradient(25deg, #f3e5a7, #FFC778, #f0efb2);
-        // background: linear-gradient(90deg, #f1f1e8,#f3e5a7, #f0efb2);
+    background: linear-gradient(25deg, #f3e5a7, #FFC778);
 
     .inner {
         padding: 0 20px;
@@ -16,6 +14,7 @@
     .main-ttl {
         margin: 95px 0 10px;
         @include main-ttl;
+        font-size: 4.0rem;
         margin-bottom: 0;
         text-align: left;
         color: $white;
@@ -60,10 +59,13 @@ main {
             }
 
             .archive-wrapper {
-
                 .main-ttl {
                     @include main-ttl;
                     display: inline-block;
+                }
+                .list-ttl{
+                    font-size: 1.8rem;
+                    margin-bottom: 20px;
                 }
 
                 .works-img {
@@ -81,7 +83,6 @@ main {
                             vertical-align: bottom;
                             border: 1px solid rgb(131, 130, 130);
                             box-sizing: border-box;
-
                         }
 
                         .img-mask {
@@ -97,7 +98,7 @@ main {
                             .img-cap {
                                 font-size: 3.6rem;
                                 padding-left: 20px;
-                                color: #fff;
+                                color:$white;
                                 padding-top: 100px;
                             }
                         }
@@ -114,11 +115,7 @@ main {
 
 @include tb {
     .single-key-visual {
-        .inner {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-
+      
         .main-ttl {
             margin-bottom: 35px;
             font-size: 5.2rem;
@@ -127,27 +124,26 @@ main {
 
     main {
         .bk {
-            max-width: 1200px;
-            padding: 20px;
             .inner {
-                max-width: 900px;
-                margin: 0 auto;
-
                 .archive-wrapper {
                     padding-bottom: 60px;
 
                     .main-ttl {
                         @include main-ttl-pc;
                     }
+                   .list-ttl{
+                       font-size: 2.0rem;
+                   }
 
                     .works-img {
                         flex-direction: row;
-                        flex-wrap: wrap;
                         justify-content: space-between;
+                        margin-bottom: 50px;
 
                         .img-filter {
-                            width: 45%;
+                            width: 33%;
                             height: 100%;
+                            margin-right: 20px;
 
                             img {
                                 width: 100%;
@@ -163,6 +159,8 @@ main {
 @include pc {
     .single-key-visual {
         .inner {
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 0;
         }
     }

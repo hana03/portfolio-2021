@@ -116,14 +116,15 @@ input, select {
 }
 
 .header .inner {
+  position: relative;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
 }
 
 .header .inner .header-logo {
   font-size: 2.4rem;
-  letter-spacing: 0.1em;
+  line-height: 60px;
+  margin-left: 20px;
 }
 
 .header .inner .header-logo a {
@@ -132,36 +133,38 @@ input, select {
 }
 
 .header .inner .fa-bars {
-  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  font-size: 2.4rem;
   color: #fff;
 }
 
 .header .header-nav-sp {
+  position: relative;
   position: fixed;
   top: 0;
 }
 
 .header .header-nav-sp .fa-times {
   position: absolute;
-  z-index: 20;
-  right: 31px;
-  bottom: 21px;
-  top: 7px;
-  font-size: 30px;
+  right: 20px;
+  top: 17px;
+  font-size: 2.4rem;
   color: #fff;
 }
 
-.header .header-nav-sp ul {
+.header .header-nav-sp .nev-list {
   background-color: #1f2020;
   height: 100vh;
 }
 
-.header .header-nav-sp ul li {
+.header .header-nav-sp .nev-list li {
   text-align: center;
   width: 100vw;
 }
 
-.header .header-nav-sp ul li a {
+.header .header-nav-sp .nev-list li a {
   display: block;
   text-decoration: none;
   font-size: 2.4rem;
@@ -169,7 +172,7 @@ input, select {
   color: #fff;
 }
 
-.header .header-nav-sp ul li a:hover {
+.header .header-nav-sp .nev-list li a:hover {
   color: #5e9b84;
   background-color: #4b4747;
   opacity: 0.8;
@@ -180,70 +183,61 @@ input, select {
 }
 
 @media screen and (min-width: 900px) {
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
-  }
   .header .pc-inner {
-    width: 1100px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    height: 75px;
-  }
-  .header .pc-inner .inner {
-    padding: 20px 0;
+    height: 80px;
   }
   .header .pc-inner .inner .header-logo {
     align-self: flex-start;
-    line-height: 75px;
+    height: 80px;
+    line-height: 80px;
     font-size: 3.2rem;
   }
   .header .pc-inner .inner .header-logo a {
-    line-height: 75px;
+    line-height: 80px;
     display: inline-block;
   }
   .header .pc-inner .inner .fa-bars {
     display: none;
   }
-  .header .pc-inner .header-nav-pc {
+  .header .header-nav-pc {
     display: block;
   }
-  .header .pc-inner .header-nav-pc ul {
+  .header .header-nav-pc .nev-list {
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 75px;
+    justify-content: space-around;
   }
-  .header .pc-inner .header-nav-pc ul li {
+  .header .header-nav-pc .nev-list li {
+    display: flex;
     padding: 0 20px;
   }
-  .header .pc-inner .header-nav-pc ul li a {
+  .header .header-nav-pc .nev-list li a {
     display: inline-block;
-    height: 75px;
-    line-height: 75px;
     text-decoration: none;
-    color: #fff;
     font-size: 2.4rem;
-    padding: 0 20px;
+    color: #fff;
+    height: 80px;
+    line-height: 80px;
   }
-  .header .pc-inner .header-nav-pc ul li a:hover {
+  .header .header-nav-pc .nev-list li a:hover {
     color: #5e9b84;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .pc-inner {
+  .header .pc-inner {
     max-width: 1200px;
     margin: 0 auto;
+  }
+  .header .pc-inner .inner .header-logo {
+    margin-left: 0;
   }
 }
 
 .key-visual-wrapper {
-  background-color: #f8e488;
+  background-color: #fcf7ed;
   padding-top: 80px;
 }
 
@@ -368,11 +362,8 @@ input, select {
   background: #90b1aa;
   animation-name: expansion;
   animation-duration: 12s;
-  animation-timing-function: ease-in;
   animation-delay: 1s;
   animation-iteration-count: 2;
-  animation-direction: normal, reverse;
-  animation-fill-mode: forwards;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -459,10 +450,10 @@ input, select {
 }
 
 .about-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -621,10 +612,10 @@ input, select {
 }
 
 .skile-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -722,11 +713,8 @@ input, select {
 .works-wrapper {
   max-width: 100%;
   text-align: center;
-  background-image: url(./imge/bk-01.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
   padding-bottom: 30px;
+  background-color: #fff8ef;
 }
 
 .works-wrapper .inner {
@@ -735,10 +723,10 @@ input, select {
 }
 
 .works-wrapper .inner .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
 }
 
@@ -785,7 +773,7 @@ input, select {
 }
 
 .works-wrapper .btn {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border: 1px solid #6d6969;
   background-color: #fff;
@@ -805,11 +793,11 @@ input, select {
 
 @media screen and (min-width: 900px) {
   .works-wrapper {
+    background-image: url(./imge/bk-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     padding-bottom: 60px;
-  }
-  .works-wrapper .inner {
-    max-width: 1200px;
-    margin: 0 auto;
   }
   .works-wrapper .inner .main-ttl {
     font-size: 4.0rem;
@@ -820,6 +808,7 @@ input, select {
   .works-wrapper .inner .works-img {
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 50px;
   }
   .works-wrapper .inner .works-img .img-filter {
     width: 33%;
@@ -829,8 +818,18 @@ input, select {
   .works-wrapper .inner .works-img .img-filter img {
     width: 100%;
   }
+  .works-wrapper .inner .works-img .img-filter:last-child {
+    margin-right: 0;
+  }
   .works-wrapper .inner .btn {
-    width: 200px;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works-wrapper .inner {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -848,7 +847,7 @@ input, select {
 .single-key-visual {
   padding-top: 50px;
   width: 100%;
-  background: linear-gradient(25deg, #f3e5a7, #FFC778, #f0efb2);
+  background: linear-gradient(25deg, #f3e5a7, #FFC778);
 }
 
 .single-key-visual .inner {
@@ -857,11 +856,12 @@ input, select {
 
 .single-key-visual .main-ttl {
   margin: 95px 0 10px;
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
+  font-size: 4.0rem;
   margin-bottom: 0;
   text-align: left;
   color: #fff;
@@ -906,12 +906,17 @@ main .bk .inner .nav-list li .fa-angle-right {
 }
 
 main .bk .inner .archive-wrapper .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
   display: inline-block;
+}
+
+main .bk .inner .archive-wrapper .list-ttl {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
 }
 
 main .bk .inner .archive-wrapper .works-img {
@@ -956,21 +961,9 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 }
 
 @media screen and (min-width: 900px) {
-  .single-key-visual .inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
   .single-key-visual .main-ttl {
     margin-bottom: 35px;
     font-size: 5.2rem;
-  }
-  main .bk {
-    max-width: 1200px;
-    padding: 20px;
-  }
-  main .bk .inner {
-    max-width: 900px;
-    margin: 0 auto;
   }
   main .bk .inner .archive-wrapper {
     padding-bottom: 60px;
@@ -981,14 +974,18 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
     letter-spacing: 0.05em;
     margin-bottom: 45px;
   }
+  main .bk .inner .archive-wrapper .list-ttl {
+    font-size: 2.0rem;
+  }
   main .bk .inner .archive-wrapper .works-img {
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
   main .bk .inner .archive-wrapper .works-img .img-filter {
-    width: 45%;
+    width: 33%;
     height: 100%;
+    margin-right: 20px;
   }
   main .bk .inner .archive-wrapper .works-img .img-filter img {
     width: 100%;
@@ -997,6 +994,8 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 
 @media screen and (min-width: 1200px) {
   .single-key-visual .inner {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
   }
   main .inner {
@@ -1005,10 +1004,10 @@ main .bk .inner .archive-wrapper .works-img .img-filter:hover .img-mask {
 }
 
 main .bk .inner .portfolio-wrapper .main-ttl {
-  font-size: 4.0rem;
+  font-size: 3.0rem;
   line-height: 2.4em;
   letter-spacing: 0.05em;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   text-align: center;
   display: inline-block;
 }
@@ -1020,6 +1019,7 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-img {
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-img img {
   width: 100%;
+  border: 1px solid #838282;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text {
@@ -1124,19 +1124,27 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text {
   flex-direction: column;
 }
 
-main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text a:first-child {
+main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text .link_flex {
+  display: flex;
+  align-items: center;
+  margin: 0 0 13px 13px;
+  font-size: 1.4rem;
+}
+
+main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .link-text .link_flex a:first-child {
   margin-bottom: 10px;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
   list-style-type: none;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border: 1px solid #6d6969;
   background-color: #fff;
@@ -1150,10 +1158,6 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:hover {
   color: #fff;
   background-color: #333332;
-}
-
-main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:first-child {
-  margin-right: 10px;
 }
 
 main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .btn:first-child {
@@ -1204,16 +1208,14 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
 
 .page-link li {
   width: 95px;
-  height: 32px;
   border: 1px solid #6d6969;
-  line-height: 32px;
+  line-height: 35px;
   text-align: center;
-  width: 95px;
 }
 
 .page-link li .fa-angle-double-left {
-  padding-left: 4px;
   vertical-align: middle;
+  padding-right: 4px;
 }
 
 .page-link li a {
@@ -1221,14 +1223,15 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   display: inline-block;
   color: #525252;
   line-height: 35px;
+  width: 100%;
 }
 
 .page-link li a .fa-angle-double-left {
-  padding-left: 4px;
   vertical-align: middle;
+  padding-right: 4px;
 }
 
-.page-link .next:hover {
+.page-link .junp:hover {
   background-color: #e1d7ce;
   opacity: 0.7;
 }
@@ -1265,5 +1268,8 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   }
   main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn {
     width: 200px;
+  }
+  main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-btn .img-btn:first-child {
+    margin-right: 10px;
   }
 }
