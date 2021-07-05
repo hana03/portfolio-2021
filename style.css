@@ -221,6 +221,9 @@ input, select {
     height: 80px;
     line-height: 80px;
   }
+  .header .header-nav-pc .nev-list li a:hover {
+    color: #5e9b84;
+  }
 }
 
 @media screen and (min-width: 1200px) {
