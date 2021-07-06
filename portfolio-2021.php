@@ -1,53 +1,12 @@
-<!DOCTYPE html>
-<html lang="ja">
+<?php
+/*
+Template Name: portfolio-2021
+*/
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio-site</title>
-    <meta name="description"
-        content="Rika OishiのPortfolioサイトです。2020年に制作してから約1年が立ちました。夢を叶えるために、就職活動に向けて新たなポートフォリオサイトを制作しました。">
-    <meta name="author" content="Rika Oishi">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
-</head>
 
-<body>
+<?php get_header(); ?>
 
-    <header class="header">
-        <div class="pc-inner">
-            <div class="inner">
-                <h1 class="header-logo"><a href="index.html">Portfolio</a></h1>
-                <i class="fas fa-bars"></i>
-            </div><!-- inner -->
-
-            <nav class="header-nav-sp">
-                <i class="fas fa-times"></i>
-                <ul class="nev-list">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skile">Skile</a></li>
-                    <li><a href="index.html#works">Works</a></li>
-                    <li><a href="https://www.instagram.com/rika.ri/?hl=ja" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/ri_ri0315" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </nav><!-- header-nav-sp -->
-
-            <nav class="header-nav-pc">
-                <ul class="nev-list">
-                    <li><a href="index.html#about">About</a></li>
-                    <li><a href="index.html#skile">Skile</a></li>
-                    <li><a href="index.html#works">Works</a></li>
-                    <li><a href="https://www.instagram.com/rika.ri/?hl=ja" target="_blank"><i
-                                class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://twitter.com/ri_ri0315" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </nav><!-- header-nav-pc -->
-        </div><!-- "pc-inner -->
-    </header>
 
     <div class="single-key-visual">
         <div class="inner">
@@ -58,20 +17,18 @@
     <main>
         <div class="bk">
             <div class="inner">
-                <ul class="nav-list">
-                    <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                    <li><i class="fas fa-angle-right"></i></li>
-                    <li><a href="works.html">my work</a></li>
-                    <li><i class="fas fa-angle-right"></i></li>
-                    <li>portfolio-2021</li>
-                </ul><!-- nav-list -->
+            <ul class="nav-list">
+
+            <?php echo do_shortcode( '[flexy_breadcrumb]'); ?>
+
+            </ul><!-- nav-list -->
 
                 <section class="portfolio-wrapper">
                     <h3 class="main-ttl">portfolio-2021</h3>
 
                     <div class="portfolio-sec">
                         <div class="portfolio-img">
-                            <img src="imge/portoforio2021-img.png">
+                            <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-img.png">
                         </div>
                         <div class="portfolio-text">
                             <div class="profile-list">
@@ -94,7 +51,7 @@
 
                                 <h3 class="main-sub-ttl" id="contents_01">制作期間</h3>
                                 <p class="main-text">コーディング期間：2021年5月4日～6月15日</p>
-                                <p class="main-text">WordPress構築：約2時間</p>
+                                <p class="main-text">WordPress構築：約3時間</p>
                                 <h3 class="main-sub-ttl" id="contents_02">category</h3>
                                 <ul>
                                     <li>HTML5/CSS3</li>
@@ -173,7 +130,7 @@
                             <div class="site-img-pc">
                                 <div class="site-img-container">
                                     <div class="site-img-content">
-                                        <img class="site-img-pc" src="imge/portoforio2021-PC-img.png"
+                                        <img class="site-img-pc" src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-PC-img.png"
                                             style="max-height: 700px;" alt="サンプル模写画像">
                                         <i class="fas fa-times-circle"></i>
                                     </div>
@@ -182,7 +139,7 @@
                             <div class="site-img-sp">
                                 <div class="site-img-container">
                                     <div class="site-img-content">
-                                        <img class="site-img-sp" src="imge/portoforio2021-SP-img.png"
+                                        <img class="site-img-sp" src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-SP-img.png"
                                             style="max-height: 700px;" alt="サンプル模写画像">
                                         <i class="fas fa-times-circle"></i>
                                     </div>
@@ -193,19 +150,11 @@
                 </section><!-- portfolio-wrapper -->
 
                 <ul class="page-link">
-                    <li class="junp"><a href="portfolio-2020.html"><i class="fas fa-angle-double-left"></i>pre</a></li>
-                    <li class="junp"><a href="kurisuta.html">next<i class="fas fa-angle-double-right"></i></a></li>
+                    <li class="junp"><a href="<?php echo get_permalink(9); ?>"><i class="fas fa-angle-double-left"></i>pre</a></li>
+                    <li class="junp"><a href="<?php echo get_permalink(14); ?>">next<i class="fas fa-angle-double-right"></i></a></li>
                 </ul><!-- page-link -->
             </div><!-- inner -->
         </div>
     </main>
 
-    <footer class="footer">
-        <small>Copyright &copy; 2021 Rika Portfolio-site.</small>
-    </footer>
-
-    <script src="js/sqript.js"></script>
-
-</body>
-
-</html>
+    <?php get_footer(); ?>
