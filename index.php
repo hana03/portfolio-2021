@@ -342,21 +342,21 @@
                 <div class="works-img">
 
                     <a class="img-filter" href="<?php echo get_permalink(9); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio01-img.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio01-img.png" alt="portoforio-2020のホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">portoforio-2020</div>
                         </div>
                     </a><!-- img-filter -->
 
                     <a class="img-filter" href="<?php echo get_permalink(11); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-img.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-img.png" alt="portoforio-2021のホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">portoforio-2021</div>
                         </div>
                     </a><!-- img-filter -->
 
                     <a class="img-filter" href="<?php echo get_permalink(14); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/imge/kurisuta-img.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/imge/kurisuta-img.png" alt="kurisutaのホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">kurisuta</div>
                         </div>
