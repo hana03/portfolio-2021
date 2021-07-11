@@ -1231,17 +1231,17 @@ main .bk .inner .portfolio-wrapper .portfolio-sec .portfolio-text .site-img-sp .
   padding-right: 4px;
 }
 
+.page-link li .fa-angle-double-right {
+  vertical-align: middle;
+  padding-left: 4px;
+}
+
 .page-link li a {
   text-decoration: none;
   display: inline-block;
   color: #525252;
   line-height: 35px;
   width: 100%;
-}
-
-.page-link li a .fa-angle-double-left {
-  vertical-align: middle;
-  padding-right: 4px;
 }
 
 .page-link .junp:hover {
