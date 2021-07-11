@@ -10,17 +10,22 @@ $('.fa-bars').on('click', function () {
 })
 
 $('.header-nav-sp').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+
 });
+
 $('.fa-times').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+    
 });
 
 
 // メニュースクロール時非表示
 
 $(function(){
-    var pos = 0;
+    var pos = 10;
     var header = $('header');
     
     $(window).on('scroll', function(){
@@ -31,20 +36,10 @@ $(function(){
         //下スクロール時の処理
         header.slideUp();
       }
-      pos = $(this).scrollTop();
+    //   pos = $(this).scrollTop();
     });
   });
 
-
-// $(document).ready(funcytion(){
-//     $('.skile-list').each(function(){
-//         if($(this).hasClass('active')){
-//             $(this)parent('dd')preve()
-//             .addClass('active');
-//             $(this).parents('dd').show();
-//         }
-//     })
-// });
 
 // skillの表示・非表示
 
@@ -53,13 +48,6 @@ $(function () {
         $(this).next().slideToggle();
     });
 });
-
-// works
-
-// function ChangeImage(imgid, newimg) {
-//     document.getElementById(imgid).src = newimg;
-// }
-
 
 $(function () {
     $('.site-img-pc').hide();
@@ -80,6 +68,7 @@ $(function () {
         $('.site-img-sp').fadeOut();
     });
 });
+    
 
 
 
