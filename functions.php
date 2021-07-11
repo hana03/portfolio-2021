@@ -1,18 +1,23 @@
 <?php
 
-function portfoliosite2021_scripts() {
+function portfoliosite2_scripts() {
   //cssを読み込む
-wp_enqueue_style( 'portfoliosite2021', get_stylesheet_uri() );
+wp_enqueue_style( 'portfoliosite3', get_stylesheet_uri() );
   //jsを読み込む
-wp_enqueue_script( 'portfoliosite2021', get_template_directory_uri() . '/js/sqript.js', array('jquery'), '20210613', true );
+wp_enqueue_script( 'portfoliosite3', get_template_directory_uri() . '/js/sqript.js', array('jquery'), '20210613', true );
 
 }
 
-add_action( 'wp_enqueue_scripts', 'portfoliosite2021_scripts' );
+add_action( 'wp_enqueue_scripts', 'portfoliosite3_scripts' );
 
 add_action( 'after_setup_theme', 'register_menu' );
 function register_menu() {
   register_nav_menu( 'primary', __( 'Primary Menu1', 'theme-slug' ) );
+}
+
+// タイトルタグの設定
+function setup_my_theme() {
+  add_theme_support( 'title-tag' );
 }
 
 //カスタムメニューのサポート
