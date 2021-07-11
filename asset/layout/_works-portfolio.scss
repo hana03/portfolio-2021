@@ -190,6 +190,10 @@ main {
             vertical-align: middle;
             padding-right: 4px;
         }
+        .fa-angle-double-right {
+            vertical-align: middle;
+            padding-left: 4px;
+        }
 
         a {
             text-decoration: none;
@@ -197,11 +201,7 @@ main {
             color: $font-color;
             line-height: 35px;
             width: 100%;
-
-            .fa-angle-double-left {
-                vertical-align: middle;
-                padding-right: 4px;
-            }
+          
         }
     }
 
