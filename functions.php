@@ -1,14 +1,14 @@
 <?php
 
-function portfoliosite2_scripts() {
+function portfoliosite4_scripts() {
   //cssを読み込む
-wp_enqueue_style( 'portfoliosite3', get_stylesheet_uri() );
+wp_enqueue_style( 'portfoliosite4', get_stylesheet_uri() );
   //jsを読み込む
-wp_enqueue_script( 'portfoliosite3', get_template_directory_uri() . '/js/sqript.js', array('jquery'), '20210613', true );
+wp_enqueue_script( 'portfoliosite4', get_template_directory_uri() . '/js/sqript.js', array('jquery'), '20210613', true );
 
 }
 
-add_action( 'wp_enqueue_scripts', 'portfoliosite3_scripts' );
+add_action( 'wp_enqueue_scripts', 'portfoliosite4_scripts' );
 
 add_action( 'after_setup_theme', 'register_menu' );
 function register_menu() {

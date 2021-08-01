@@ -17,30 +17,34 @@
         .main-sub-ttl {
             @include main-sub-ttl;
             transition: .2s;
-            color:$green;
-
-            .fa-angle-down {
+            color: $green;
+            height: 3.0rem;
+            line-height: 3.0rem;
+         
+            .span {
                 margin-left: 18px;
-                font-size: 20px;
-                vertical-align: middle;
+                font-size: 2.0rem;
+                height: 3.0rem;
+                line-height: 3.0rem;
             }
 
             &:hover {
-               opacity: 0.7;
+                opacity: 0.7;
                 cursor: pointer;
             }
-        }
+        }    
 
         ul {
             list-style-type: none;
             text-align: left;
-            display: none;
 
             .skile-list {
                 border-bottom: 1px solid $bk-color;
                 padding-bottom: 10px;
                 margin-bottom: 30px;
-                .list-ttl{
+                display: none;
+
+                .list-ttl {
                     @include h4-ttl;
                 }
 
@@ -62,6 +66,9 @@
                     }
                 }
             }
+            .open{
+                display: block;
+            }
         }
     }
 }
@@ -69,6 +76,7 @@
 @include tb {
     .skile-wrapper {
         padding-bottom: 60px;
+
         .inner {
             max-width: 1100px;
             margin: 0 auto;
@@ -81,13 +89,14 @@
             .main-sub-ttl {
                 @include main-sub-ttl-pc;
                 transition: .2s;
-                .fa-angle-down {
-                    font-size: 28x;
-                }
 
-                .fa-angle-down {
+                // .fa-angle-down {
+                //     font-size: 28x;
+                // }
+
+                .span {
                     margin-left: 18px;
-                    font-size: 28px;
+                    font-size: 2.8rem;
                 }
             }
         }

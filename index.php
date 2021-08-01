@@ -30,12 +30,12 @@
 
         <section class="about-wrapper" id="about">
             <div class="inner">
-                <h3 class="main-ttl">About</i></h3>
+                <h3 class="main-ttl fadein">About</i></h3>
                 <div class="about-sec">
-                    <div class="about-imge">
+                    <div class="about-imge fadein">
                         <img src="<?php echo get_template_directory_uri(); ?>/./imge/rikaoishi-img.jpeg">
                     </div><!-- about-imge -->
-                    <div class="profile">
+                    <div class="profile fadein">
                         <h3 class="main-sub-ttl">Rika Oishi</h3>
 
                         <dl class="profile-list">
@@ -68,12 +68,12 @@
 
         <section class="skile-wrapper" id="skile">
             <div class="inner">
-                <h2 class="main-ttl">Skills</i></h3>
+                <h2 class="main-ttl fadein">Skills</i></h3>
                     　　　　　　　　　
                     <!-- Programming language -->
-                    <h2 class="main-sub-ttl skile-ttl">Programming language<i class="fas fa-angle-down"></i></h2>
-
-                    <ul>
+                    
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">Programming language<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">HTML5/CSS3</h4>
                             <p class="main-text">基本的なコーディング、レシポンシブコーディングが出来ます。
@@ -150,9 +150,9 @@
                     </ul>
 
                     <!-- CMS -->
-                    <h2 class="main-sub-ttl skile-ttl">CMS<i class="fas fa-angle-down"></i></h2>
-
-                    <ul>
+                    
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">CMS<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">Word Press</h4>
                             <p class="main-text">
@@ -175,9 +175,9 @@
                     </ul>
 
                     <!-- コミュニケーションツール -->
-                    <h2 class="main-sub-ttl skile-ttl">Communication tool<i class="fas fa-angle-down"></i></h2>
-
-                    <ul>
+                    
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">Communication tool<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">zoom</h4>
                             <p class="main-text">
@@ -232,9 +232,9 @@
                     </ul>
 
                     <!-- Adobe  -->
-                    <h2 class="main-sub-ttl skile-ttl">Adobe<i class="fas fa-angle-down"></i></h2>
-
-                    <ul>
+                    
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">Adobe<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">Photoshop</h4>
                             <p class="main-text">ヒューマンアカデミーwebデザインコースで習得しました。基本的な操作が可能なレベルです。</p>
@@ -274,8 +274,8 @@
                     </ul>
 
                     <!-- バージョン管理システム -->
-                    <h2 class="main-sub-ttl skile-ttl">control<i class="fas fa-angle-down"></i></h2>
-                    <ul>
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">control<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">GitHub</h4>
                             <p class="main-text">Web制作会社が主催する、オンラインのGit,GitHub勉強会へ参加して習得しました。</p>
@@ -318,8 +318,8 @@
                     </ul>
 
                     <!-- エディター -->
-                    <h2 class="main-sub-ttl skile-ttl">Text editor<i class="fas fa-angle-down"></i></h2>
-                    <ul>
+                    <ul class="skile-sec">
+                        <h2 class="main-sub-ttl skile-ttl fadein">Text editor<span class="span"><i class="fas fa-angle-down"></i></span></h2>
                         <li class="skile-list">
                             <h4 class="list-ttl">Visual Studio Code（VSCode）</h4>
                             <p class="main-text">現在VSコードを使用しています。Dreamweaver、brackets、Atom は、使用した経験があります。</p>
@@ -337,25 +337,25 @@
 
         <section class="works-wrapper" id="works">
             <div class="inner">
-                <h2 class="main-ttl">Works</h2>
+                <h2 class="main-ttl fadein">Works</h2>
 
                 <div class="works-img">
 
-                    <a class="img-filter" href="<?php echo get_permalink(9); ?>">
+                    <a class="img-filter fadein" href="<?php echo get_permalink(9); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio01-img.png" alt="portoforio-2020のホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">portoforio-2020</div>
                         </div>
                     </a><!-- img-filter -->
 
-                    <a class="img-filter" href="<?php echo get_permalink(11); ?>">
+                    <a class="img-filter fadein" href="<?php echo get_permalink(11); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/imge/portoforio2021-img.png" alt="portoforio-2021のホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">portoforio-2021</div>
                         </div>
                     </a><!-- img-filter -->
 
-                    <a class="img-filter" href="<?php echo get_permalink(14); ?>">
+                    <a class="img-filter fadein" href="<?php echo get_permalink(14); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/imge/kurisuta-img.png" alt="kurisutaのホーム画像">
                         <div class="img-mask">
                             <div class="img-cap">kurisuta</div>
