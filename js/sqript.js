@@ -10,56 +10,54 @@ $('.fa-bars').on('click', function () {
 })
 
 $('.header-nav-sp').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+
 });
+
 $('.fa-times').on('click', function () {
+
     $('.header-nav-sp').fadeOut();
+
 });
 
+//scroll
 
-// メニュースクロール時非表示
+$(function () {
+    $(window).scroll(function () {
+        $('.fadein').each(function () {
+            var targetElement = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
 
-$(function(){
-    var pos = 0;
-    var header = $('header');
-    
-    $(window).on('scroll', function(){
-      if($(this).scrollTop() < pos ){
-        //上スクロール時の処理
-        header.slideDown();
-      }else{
-        //下スクロール時の処理
-        header.slideUp();
-      }
-      pos = $(this).scrollTop();
+            if (scroll > targetElement - windowHeight + 150) {
+                $(this).addClass('scrollin');
+            }
+
+        });
     });
-  });
-
-
-// $(document).ready(funcytion(){
-//     $('.skile-list').each(function(){
-//         if($(this).hasClass('active')){
-//             $(this)parent('dd')preve()
-//             .addClass('active');
-//             $(this).parents('dd').show();
-//         }
-//     })
-// });
+});
 
 // skillの表示・非表示
 
 $(function () {
-    $('.skile-ttl').on('click', function () {
-        $(this).next().slideToggle();
+    $('.skile-sec').click(function () {
+
+        var $answer = $(this).find('.skile-list');
+        if ($answer.hasClass('open')) {
+            
+            $answer.removeClass('open');
+            $answer.slideUp();
+            $(this).find('span').html('<i class="fas fa-angle-down"></i>');
+        } else {
+            $answer.addClass('open');
+            $answer.slideDown();
+            $(this).find('span').html('<i class="fas fa-angle-up"></i>');
+        }
     });
 });
 
-// works
-
-// function ChangeImage(imgid, newimg) {
-//     document.getElementById(imgid).src = newimg;
-// }
-
+//work
 
 $(function () {
     $('.site-img-pc').hide();
@@ -80,6 +78,7 @@ $(function () {
         $('.site-img-sp').fadeOut();
     });
 });
+
 
 
 
